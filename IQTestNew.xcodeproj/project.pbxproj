@@ -23,6 +23,13 @@
 		66883A16215C13E2009789AF /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66883A14215C13E2009789AF /* AVKit.framework */; };
 		66883A17215C13E2009789AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66883A15215C13E2009789AF /* AVFoundation.framework */; };
 		66883A19215C307D009789AF /* ListenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A18215C307D009789AF /* ListenVC.swift */; };
+		66883A22215C3DBD009789AF /* note1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66883A1B215C3DBD009789AF /* note1.wav */; };
+		66883A23215C3DBD009789AF /* note7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66883A1C215C3DBD009789AF /* note7.wav */; };
+		66883A24215C3DBD009789AF /* note2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66883A1D215C3DBD009789AF /* note2.wav */; };
+		66883A25215C3DBD009789AF /* note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66883A1E215C3DBD009789AF /* note4.wav */; };
+		66883A26215C3DBD009789AF /* note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66883A1F215C3DBD009789AF /* note5.wav */; };
+		66883A27215C3DBD009789AF /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66883A20215C3DBD009789AF /* note6.wav */; };
+		66883A28215C3DBD009789AF /* note3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66883A21215C3DBD009789AF /* note3.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +53,13 @@
 		66883A14215C13E2009789AF /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		66883A15215C13E2009789AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		66883A18215C307D009789AF /* ListenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenVC.swift; sourceTree = "<group>"; };
+		66883A1B215C3DBD009789AF /* note1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note1.wav; sourceTree = "<group>"; };
+		66883A1C215C3DBD009789AF /* note7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note7.wav; sourceTree = "<group>"; };
+		66883A1D215C3DBD009789AF /* note2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note2.wav; sourceTree = "<group>"; };
+		66883A1E215C3DBD009789AF /* note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note4.wav; sourceTree = "<group>"; };
+		66883A1F215C3DBD009789AF /* note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note5.wav; sourceTree = "<group>"; };
+		66883A20215C3DBD009789AF /* note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note6.wav; sourceTree = "<group>"; };
+		66883A21215C3DBD009789AF /* note3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note3.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,7 @@
 		668839ED215B128A009789AF /* IQTestNew */ = {
 			isa = PBXGroup;
 			children = (
+				66883A1A215C3D71009789AF /* Sound Files */,
 				66883A0F215B51B3009789AF /* ObserveVC.swift */,
 				66883A0C215B492C009789AF /* ProgressHUD.bundle */,
 				66883A0A215B492C009789AF /* ProgressHUD.h */,
@@ -109,6 +124,20 @@
 				66883A14215C13E2009789AF /* AVKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66883A1A215C3D71009789AF /* Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+				66883A1B215C3DBD009789AF /* note1.wav */,
+				66883A1D215C3DBD009789AF /* note2.wav */,
+				66883A21215C3DBD009789AF /* note3.wav */,
+				66883A1E215C3DBD009789AF /* note4.wav */,
+				66883A1F215C3DBD009789AF /* note5.wav */,
+				66883A20215C3DBD009789AF /* note6.wav */,
+				66883A1C215C3DBD009789AF /* note7.wav */,
+			);
+			path = "Sound Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,10 +199,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66883A26215C3DBD009789AF /* note5.wav in Resources */,
+				66883A23215C3DBD009789AF /* note7.wav in Resources */,
+				66883A24215C3DBD009789AF /* note2.wav in Resources */,
+				66883A27215C3DBD009789AF /* note6.wav in Resources */,
+				66883A28215C3DBD009789AF /* note3.wav in Resources */,
 				66883A0E215B492C009789AF /* ProgressHUD.bundle in Resources */,
 				668839FC215B128A009789AF /* LaunchScreen.storyboard in Resources */,
 				668839F9215B128A009789AF /* Assets.xcassets in Resources */,
+				66883A22215C3DBD009789AF /* note1.wav in Resources */,
 				668839F4215B128A009789AF /* Main.storyboard in Resources */,
+				66883A25215C3DBD009789AF /* note4.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
