@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		668839EF215B128A009789AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668839EE215B128A009789AF /* AppDelegate.swift */; };
-		668839F1215B128A009789AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668839F0215B128A009789AF /* ViewController.swift */; };
+		668839F1215B128A009789AF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668839F0215B128A009789AF /* MainVC.swift */; };
 		668839F4215B128A009789AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668839F2215B128A009789AF /* Main.storyboard */; };
 		668839F7215B128A009789AF /* IQTestNew.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 668839F5215B128A009789AF /* IQTestNew.xcdatamodeld */; };
 		668839F9215B128A009789AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668839F8215B128A009789AF /* Assets.xcassets */; };
 		668839FC215B128A009789AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668839FA215B128A009789AF /* LaunchScreen.storyboard */; };
+		66883A04215B165B009789AF /* EntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A03215B165B009789AF /* EntryVC.swift */; };
+		66883A06215B45E8009789AF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A05215B45E8009789AF /* Question.swift */; };
+		66883A08215B4603009789AF /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A07215B4603009789AF /* QuestionBank.swift */; };
+		66883A0D215B492C009789AF /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883A0B215B492C009789AF /* ProgressHUD.m */; };
+		66883A0E215B492C009789AF /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 66883A0C215B492C009789AF /* ProgressHUD.bundle */; };
+		66883A10215B51B3009789AF /* ObserveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A0F215B51B3009789AF /* ObserveVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		668839EB215B128A009789AF /* IQTestNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IQTestNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668839EE215B128A009789AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		668839F0215B128A009789AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		668839F0215B128A009789AF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		668839F3215B128A009789AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		668839F6215B128A009789AF /* IQTestNew.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IQTestNew.xcdatamodel; sourceTree = "<group>"; };
 		668839F8215B128A009789AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		668839FB215B128A009789AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		668839FD215B128A009789AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66883A03215B165B009789AF /* EntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryVC.swift; sourceTree = "<group>"; };
+		66883A05215B45E8009789AF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		66883A07215B4603009789AF /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		66883A09215B492B009789AF /* IQTestNew-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IQTestNew-Bridging-Header.h"; sourceTree = "<group>"; };
+		66883A0A215B492C009789AF /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		66883A0B215B492C009789AF /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		66883A0C215B492C009789AF /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		66883A0F215B51B3009789AF /* ObserveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +70,21 @@
 		668839ED215B128A009789AF /* IQTestNew */ = {
 			isa = PBXGroup;
 			children = (
+				66883A0F215B51B3009789AF /* ObserveVC.swift */,
+				66883A0C215B492C009789AF /* ProgressHUD.bundle */,
+				66883A0A215B492C009789AF /* ProgressHUD.h */,
+				66883A0B215B492C009789AF /* ProgressHUD.m */,
 				668839EE215B128A009789AF /* AppDelegate.swift */,
-				668839F0215B128A009789AF /* ViewController.swift */,
+				668839F0215B128A009789AF /* MainVC.swift */,
 				668839F2215B128A009789AF /* Main.storyboard */,
+				66883A05215B45E8009789AF /* Question.swift */,
+				66883A07215B4603009789AF /* QuestionBank.swift */,
+				66883A03215B165B009789AF /* EntryVC.swift */,
 				668839F8215B128A009789AF /* Assets.xcassets */,
 				668839FA215B128A009789AF /* LaunchScreen.storyboard */,
 				668839FD215B128A009789AF /* Info.plist */,
 				668839F5215B128A009789AF /* IQTestNew.xcdatamodeld */,
+				66883A09215B492B009789AF /* IQTestNew-Bridging-Header.h */,
 			);
 			path = IQTestNew;
 			sourceTree = "<group>";
@@ -99,6 +121,7 @@
 				TargetAttributes = {
 					668839EA215B128A009789AF = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -125,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66883A0E215B492C009789AF /* ProgressHUD.bundle in Resources */,
 				668839FC215B128A009789AF /* LaunchScreen.storyboard in Resources */,
 				668839F9215B128A009789AF /* Assets.xcassets in Resources */,
 				668839F4215B128A009789AF /* Main.storyboard in Resources */,
@@ -138,9 +162,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				668839F1215B128A009789AF /* ViewController.swift in Sources */,
+				66883A06215B45E8009789AF /* Question.swift in Sources */,
+				66883A10215B51B3009789AF /* ObserveVC.swift in Sources */,
+				668839F1215B128A009789AF /* MainVC.swift in Sources */,
 				668839F7215B128A009789AF /* IQTestNew.xcdatamodeld in Sources */,
+				66883A0D215B492C009789AF /* ProgressHUD.m in Sources */,
 				668839EF215B128A009789AF /* AppDelegate.swift in Sources */,
+				66883A04215B165B009789AF /* EntryVC.swift in Sources */,
+				66883A08215B4603009789AF /* QuestionBank.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IQTestNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,6 +322,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.archanapanda.IQTestNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IQTestNew/IQTestNew-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IQTestNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +342,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.archanapanda.IQTestNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IQTestNew/IQTestNew-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
