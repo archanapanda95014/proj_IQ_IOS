@@ -19,6 +19,10 @@
 		66883A0D215B492C009789AF /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 66883A0B215B492C009789AF /* ProgressHUD.m */; };
 		66883A0E215B492C009789AF /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 66883A0C215B492C009789AF /* ProgressHUD.bundle */; };
 		66883A10215B51B3009789AF /* ObserveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A0F215B51B3009789AF /* ObserveVC.swift */; };
+		66883A12215C12E5009789AF /* WatchOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A11215C12E5009789AF /* WatchOutVC.swift */; };
+		66883A16215C13E2009789AF /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66883A14215C13E2009789AF /* AVKit.framework */; };
+		66883A17215C13E2009789AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66883A15215C13E2009789AF /* AVFoundation.framework */; };
+		66883A19215C307D009789AF /* ListenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A18215C307D009789AF /* ListenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		66883A0B215B492C009789AF /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		66883A0C215B492C009789AF /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		66883A0F215B51B3009789AF /* ObserveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveVC.swift; sourceTree = "<group>"; };
+		66883A11215C12E5009789AF /* WatchOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOutVC.swift; sourceTree = "<group>"; };
+		66883A14215C13E2009789AF /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		66883A15215C13E2009789AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		66883A18215C307D009789AF /* ListenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66883A16215C13E2009789AF /* AVKit.framework in Frameworks */,
+				66883A17215C13E2009789AF /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,7 @@
 			children = (
 				668839ED215B128A009789AF /* IQTestNew */,
 				668839EC215B128A009789AF /* Products */,
+				66883A13215C13E2009789AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +88,8 @@
 				668839EE215B128A009789AF /* AppDelegate.swift */,
 				668839F0215B128A009789AF /* MainVC.swift */,
 				668839F2215B128A009789AF /* Main.storyboard */,
+				66883A18215C307D009789AF /* ListenVC.swift */,
+				66883A11215C12E5009789AF /* WatchOutVC.swift */,
 				66883A05215B45E8009789AF /* Question.swift */,
 				66883A07215B4603009789AF /* QuestionBank.swift */,
 				66883A03215B165B009789AF /* EntryVC.swift */,
@@ -87,6 +100,15 @@
 				66883A09215B492B009789AF /* IQTestNew-Bridging-Header.h */,
 			);
 			path = IQTestNew;
+			sourceTree = "<group>";
+		};
+		66883A13215C13E2009789AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66883A15215C13E2009789AF /* AVFoundation.framework */,
+				66883A14215C13E2009789AF /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,8 +190,10 @@
 				668839F7215B128A009789AF /* IQTestNew.xcdatamodeld in Sources */,
 				66883A0D215B492C009789AF /* ProgressHUD.m in Sources */,
 				668839EF215B128A009789AF /* AppDelegate.swift in Sources */,
+				66883A12215C12E5009789AF /* WatchOutVC.swift in Sources */,
 				66883A04215B165B009789AF /* EntryVC.swift in Sources */,
 				66883A08215B4603009789AF /* QuestionBank.swift in Sources */,
+				66883A19215C307D009789AF /* ListenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
