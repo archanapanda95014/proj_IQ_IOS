@@ -30,7 +30,6 @@ class ObserveVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
-    
     let diceArray = ["dice1","dice2","dice3","dice4","dice5","dice6"]
     
     override func viewDidLoad() {

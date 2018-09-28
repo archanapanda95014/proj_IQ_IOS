@@ -49,6 +49,9 @@ class WatchOutVC: UIViewController {
         }
     override func viewWillAppear(_ animated: Bool) {
         print("coming")
+        
+//        waitImage.image = UIImage(named: "waiter-96.png")
+        
     }
     
     func videoLoad(_ videoCode:String){
