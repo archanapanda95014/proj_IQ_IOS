@@ -17,6 +17,7 @@ class WatchOutVC: UIViewController {
     var avPlayer:AVPlayer?
     @IBOutlet weak var video1: WKWebView!
     
+    @IBOutlet weak var waitImage: UIImageView!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     var score:Int = 0
@@ -43,14 +44,16 @@ class WatchOutVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // video for "I love u"
 //        videoLoad("1ctP9cLRbnE")
+        //video for 30 sec hint
+        video1.navigationDelegate = self
         videoLoad("yeyS23CGGe0")
         nextQuestion()
         }
     override func viewWillAppear(_ animated: Bool) {
         print("coming")
-        
-//        waitImage.image = UIImage(named: "waiter-96.png")
+        waitImage.image = UIImage(named: "progress.png")
         
     }
     
@@ -67,15 +70,18 @@ class WatchOutVC: UIViewController {
             questionLabel.text = allQuestions.list[questionNumber].questionText
             
         } else {
-            let alert  = UIAlertController(title: "Awesome", message: "You completed the quiz, do you want to restart?", preferredStyle: .alert)
+            let alert  = UIAlertController(title: "TESTING", message: "You completed the quiz, do you want to restart?", preferredStyle: .alert)
             
             let restartAction = UIAlertAction(title: "Restart", style: .default, handler: {(alert: UIAlertAction!) in
-                self.startOver()
+//                print("RESTART RPESSED")
+//                self.startOver()
             })
-            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel){ _ in
+                self.tabBarController?.selectedIndex = 1
+            }
             alert.addAction(restartAction)
-            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-            present(alert, animated: true, completion: nil)
+            alert.addAction(cancelAction)
+            present(alert, animated: true, completion: {print("ALERT IS PRESENTED")})
         }
     }
     
@@ -104,4 +110,10 @@ class WatchOutVC: UIViewController {
     
 }
     
-
+extension WatchOutVC: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        UIView.animate(withDuration: 0.5) {
+            self.waitImage.alpha = 0
+        }
+    }
+}

@@ -17,7 +17,7 @@ class QuestionBank{
         
         list.append(Question(text: "A polar bear walks at 5km/h for 6hr and at 4km/h for 12hr. His average speed is 4.33", correctAnswer: true))
         
-        list.append(Question(text: "the missing number in the series- [ 3, 8, 15, 24, ?, 48  - 3 ]  is 34", correctAnswer: false))
+        list.append(Question(text: "the missing number in the series- [ 3, 8, 15, 24, ? , 48   ]  is 34", correctAnswer: false))
         
         list.append(Question(text: "If 40% of a number is 48, then that number is 120?", correctAnswer: true))
         

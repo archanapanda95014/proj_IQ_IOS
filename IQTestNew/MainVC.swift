@@ -57,9 +57,12 @@ class MainVC: UIViewController {
             let restartAction = UIAlertAction(title: "Restart", style: .default, handler: {(alert: UIAlertAction!) in
                 self.startOver()
             })
-            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel){ _ in
+                self.tabBarController?.selectedIndex = 2
+            }
             alert.addAction(restartAction)
-            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            alert.addAction(cancelAction)
+
             present(alert, animated: true, completion: nil)
         }
         

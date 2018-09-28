@@ -92,9 +92,13 @@ class ObserveVC: UIViewController {
                 print("reached here")
                 self.startOver()
             })
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel){ _ in
+                self.tabBarController?.selectedIndex = 3
+            }
             
             alert.addAction(restartAction)
-            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            alert.addAction(cancelAction)
+//            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             present(alert, animated: true, completion: nil)
         }
     }
