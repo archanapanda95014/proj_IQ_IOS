@@ -28,7 +28,10 @@ class WatchOutVC: UIViewController {
         videoLoad("yeyS23CGGe0")
         }
     
-   
+    override func viewWillAppear(_ animated: Bool) {
+        print("coming")
+        
+    }
     
     func videoLoad(_ videoCode:String){
         guard

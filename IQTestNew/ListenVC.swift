@@ -24,11 +24,12 @@ class ListenVC: UIViewController, AVAudioPlayerDelegate {
     let soundArray = ["note1","note2","note3","note4","note5","note6","note7"]
     
     @IBAction func notePressed(_ sender: UIButton) {
-        total = total+1
+        
         if checkMusic == 0{
             soundOfMusic = soundArray[sender.tag-1]
             playMusic()
         } else {
+            total = total+1
             soundOfMusic = soundArray[sender.tag-1]
             if soundOfMusic == soundOfPlay{
                 ProgressHUD.showSuccess("Wow! Correct !")
@@ -65,6 +66,9 @@ class ListenVC: UIViewController, AVAudioPlayerDelegate {
         checkMusic = 1
     }
     
+    @IBAction func cancelPressed(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 

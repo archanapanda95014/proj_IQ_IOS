@@ -30,6 +30,9 @@
 		66883A26215C3DBD009789AF /* note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66883A1F215C3DBD009789AF /* note5.wav */; };
 		66883A27215C3DBD009789AF /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66883A20215C3DBD009789AF /* note6.wav */; };
 		66883A28215C3DBD009789AF /* note3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66883A21215C3DBD009789AF /* note3.wav */; };
+		66883A2A215D6FA8009789AF /* CalculationBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A29215D6FA8009789AF /* CalculationBank.swift */; };
+		66883A2C215D7349009789AF /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A2B215D7349009789AF /* Calculation.swift */; };
+		66883A2E215DF7F8009789AF /* WatchoutBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A2D215DF7F7009789AF /* WatchoutBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		66883A1F215C3DBD009789AF /* note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note5.wav; sourceTree = "<group>"; };
 		66883A20215C3DBD009789AF /* note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note6.wav; sourceTree = "<group>"; };
 		66883A21215C3DBD009789AF /* note3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note3.wav; sourceTree = "<group>"; };
+		66883A29215D6FA8009789AF /* CalculationBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationBank.swift; sourceTree = "<group>"; };
+		66883A2B215D7349009789AF /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
+		66883A2D215DF7F7009789AF /* WatchoutBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchoutBank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +109,12 @@
 				668839EE215B128A009789AF /* AppDelegate.swift */,
 				668839F0215B128A009789AF /* MainVC.swift */,
 				668839F2215B128A009789AF /* Main.storyboard */,
+				66883A2D215DF7F7009789AF /* WatchoutBank.swift */,
+				66883A29215D6FA8009789AF /* CalculationBank.swift */,
 				66883A18215C307D009789AF /* ListenVC.swift */,
 				66883A11215C12E5009789AF /* WatchOutVC.swift */,
 				66883A05215B45E8009789AF /* Question.swift */,
+				66883A2B215D7349009789AF /* Calculation.swift */,
 				66883A07215B4603009789AF /* QuestionBank.swift */,
 				66883A03215B165B009789AF /* EntryVC.swift */,
 				668839F8215B128A009789AF /* Assets.xcassets */,
@@ -221,11 +230,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				66883A06215B45E8009789AF /* Question.swift in Sources */,
+				66883A2E215DF7F8009789AF /* WatchoutBank.swift in Sources */,
+				66883A2A215D6FA8009789AF /* CalculationBank.swift in Sources */,
 				66883A10215B51B3009789AF /* ObserveVC.swift in Sources */,
 				668839F1215B128A009789AF /* MainVC.swift in Sources */,
 				668839F7215B128A009789AF /* IQTestNew.xcdatamodeld in Sources */,
 				66883A0D215B492C009789AF /* ProgressHUD.m in Sources */,
 				668839EF215B128A009789AF /* AppDelegate.swift in Sources */,
+				66883A2C215D7349009789AF /* Calculation.swift in Sources */,
 				66883A12215C12E5009789AF /* WatchOutVC.swift in Sources */,
 				66883A04215B165B009789AF /* EntryVC.swift in Sources */,
 				66883A08215B4603009789AF /* QuestionBank.swift in Sources */,
