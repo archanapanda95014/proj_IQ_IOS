@@ -26,14 +26,8 @@ class QuestionBank{
         list.append(Question(text: "All Groops are Balbos. Some Balbos are Nerts. All Nerts are illegal. Some Groops are definitely illegal.", correctAnswer: false))
         
         list.append(Question(text: "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog, Correct?", correctAnswer: true))
-        
     }
-    
-    
 }
-
-
-//Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog: True
 
 //A man was driving his car with no headlights on, and the moon wasn't out. A young woman dressed in an all black dress darted out across the road in front of his car. The man was able to put his brakes on in time, allowing the woman to safely cross the road. How did the man see her?
 //
