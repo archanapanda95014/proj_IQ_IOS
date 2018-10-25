@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EEC67495F39ADB62162814E /* Pods_IQTestNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FA12B500C2237B91E41EC4 /* Pods_IQTestNew.framework */; };
 		668839EF215B128A009789AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668839EE215B128A009789AF /* AppDelegate.swift */; };
 		668839F1215B128A009789AF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668839F0215B128A009789AF /* MainVC.swift */; };
 		668839F4215B128A009789AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668839F2215B128A009789AF /* Main.storyboard */; };
@@ -33,9 +34,11 @@
 		66883A2A215D6FA8009789AF /* CalculationBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A29215D6FA8009789AF /* CalculationBank.swift */; };
 		66883A2C215D7349009789AF /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A2B215D7349009789AF /* Calculation.swift */; };
 		66883A2E215DF7F8009789AF /* WatchoutBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66883A2D215DF7F7009789AF /* WatchoutBank.swift */; };
+		66902FE9215EE72D00676098 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66902FE8215EE72D00676098 /* ResultVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10FA12B500C2237B91E41EC4 /* Pods_IQTestNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IQTestNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		668839EB215B128A009789AF /* IQTestNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IQTestNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668839EE215B128A009789AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		668839F0215B128A009789AF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -66,6 +69,9 @@
 		66883A29215D6FA8009789AF /* CalculationBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationBank.swift; sourceTree = "<group>"; };
 		66883A2B215D7349009789AF /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
 		66883A2D215DF7F7009789AF /* WatchoutBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchoutBank.swift; sourceTree = "<group>"; };
+		66902FE8215EE72D00676098 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		956926CBDDE01968F127CF57 /* Pods-IQTestNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQTestNew.release.xcconfig"; path = "Pods/Target Support Files/Pods-IQTestNew/Pods-IQTestNew.release.xcconfig"; sourceTree = "<group>"; };
+		B4BE00BDA96E176F32C99058 /* Pods-IQTestNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQTestNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IQTestNew/Pods-IQTestNew.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 			files = (
 				66883A16215C13E2009789AF /* AVKit.framework in Frameworks */,
 				66883A17215C13E2009789AF /* AVFoundation.framework in Frameworks */,
+				3EEC67495F39ADB62162814E /* Pods_IQTestNew.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +94,7 @@
 				668839ED215B128A009789AF /* IQTestNew */,
 				668839EC215B128A009789AF /* Products */,
 				66883A13215C13E2009789AF /* Frameworks */,
+				8476A002723F43CDC5AC5BFB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +118,7 @@
 				668839F0215B128A009789AF /* MainVC.swift */,
 				668839F2215B128A009789AF /* Main.storyboard */,
 				66883A2D215DF7F7009789AF /* WatchoutBank.swift */,
+				66902FE8215EE72D00676098 /* ResultVC.swift */,
 				66883A29215D6FA8009789AF /* CalculationBank.swift */,
 				66883A18215C307D009789AF /* ListenVC.swift */,
 				66883A11215C12E5009789AF /* WatchOutVC.swift */,
@@ -131,6 +140,7 @@
 			children = (
 				66883A15215C13E2009789AF /* AVFoundation.framework */,
 				66883A14215C13E2009789AF /* AVKit.framework */,
+				10FA12B500C2237B91E41EC4 /* Pods_IQTestNew.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,6 +159,15 @@
 			path = "Sound Files";
 			sourceTree = "<group>";
 		};
+		8476A002723F43CDC5AC5BFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE00BDA96E176F32C99058 /* Pods-IQTestNew.debug.xcconfig */,
+				956926CBDDE01968F127CF57 /* Pods-IQTestNew.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66883A00215B128A009789AF /* Build configuration list for PBXNativeTarget "IQTestNew" */;
 			buildPhases = (
+				3A93E3763CF07B7813C9CA82 /* [CP] Check Pods Manifest.lock */,
 				668839E7215B128A009789AF /* Sources */,
 				668839E8215B128A009789AF /* Frameworks */,
 				668839E9215B128A009789AF /* Resources */,
+				8FDDE0C82E80F4527C067FAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,6 +245,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A93E3763CF07B7813C9CA82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IQTestNew-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FDDE0C82E80F4527C067FAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IQTestNew/Pods-IQTestNew-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DDSpiderChart/DDSpiderChart.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DDSpiderChart.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IQTestNew/Pods-IQTestNew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		668839E7215B128A009789AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -240,6 +300,7 @@
 				66883A2C215D7349009789AF /* Calculation.swift in Sources */,
 				66883A12215C12E5009789AF /* WatchOutVC.swift in Sources */,
 				66883A04215B165B009789AF /* EntryVC.swift in Sources */,
+				66902FE9215EE72D00676098 /* ResultVC.swift in Sources */,
 				66883A08215B4603009789AF /* QuestionBank.swift in Sources */,
 				66883A19215C307D009789AF /* ListenVC.swift in Sources */,
 			);
@@ -383,6 +444,7 @@
 		};
 		66883A01215B128A009789AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4BE00BDA96E176F32C99058 /* Pods-IQTestNew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -404,6 +466,7 @@
 		};
 		66883A02215B128A009789AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 956926CBDDE01968F127CF57 /* Pods-IQTestNew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

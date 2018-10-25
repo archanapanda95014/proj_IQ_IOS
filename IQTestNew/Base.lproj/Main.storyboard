@@ -559,11 +559,23 @@
         <!--Results-->
         <scene sceneID="cMy-g3-ofK">
             <objects>
-                <viewController id="Mu3-eD-8cO" sceneMemberID="viewController">
+                <viewController id="Mu3-eD-8cO" customClass="ResultVC" customModule="IQTestNew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B1Z-ik-yBB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvq-3H-qrg" customClass="DDSpiderChartView" customModule="DDSpiderChart">
+                                <rect key="frame" x="10" y="30" width="355" height="578"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9y1-DO-lWI" firstAttribute="trailing" secondItem="vvq-3H-qrg" secondAttribute="trailing" constant="10" id="CkT-e3-0GW"/>
+                            <constraint firstItem="9y1-DO-lWI" firstAttribute="bottom" secondItem="vvq-3H-qrg" secondAttribute="bottom" constant="10" id="Dto-ms-vbN"/>
+                            <constraint firstItem="vvq-3H-qrg" firstAttribute="top" secondItem="9y1-DO-lWI" secondAttribute="top" constant="10" id="dl9-Mb-ZAh"/>
+                            <constraint firstItem="vvq-3H-qrg" firstAttribute="leading" secondItem="9y1-DO-lWI" secondAttribute="leading" constant="10" id="mUJ-7N-RTj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9y1-DO-lWI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Results" image="cap-32" id="cWY-BP-eNM"/>

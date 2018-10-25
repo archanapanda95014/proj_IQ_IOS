@@ -1,0 +1,6 @@
+framework module Pods_IQTestNew {
+  umbrella header "Pods-IQTestNew-umbrella.h"
+
+  export *
+  module * { export * }
+}

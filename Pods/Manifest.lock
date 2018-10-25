@@ -1,0 +1,16 @@
+PODS:
+  - DDSpiderChart (0.3)
+
+DEPENDENCIES:
+  - DDSpiderChart
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DDSpiderChart
+
+SPEC CHECKSUMS:
+  DDSpiderChart: 6866128fb95f7d8f2f880f5a38faedaa3463780c
+
+PODFILE CHECKSUM: 854ddf849e3ce34b2ba36a8ed7e6ed926b47523f
+
+COCOAPODS: 1.5.3
